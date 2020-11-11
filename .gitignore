@@ -13,3 +13,6 @@
 #some files created for this project needs
 *.txt
 *.pdf
+
+#images before processing
+**/local

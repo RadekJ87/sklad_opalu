@@ -73,54 +73,121 @@ nav.navbar {
     font-weight: bold;
 }
 
-nav.navbar.active{
+nav.navbar.active {
     left: 0;
 }
 
 /* secja powitalna */
 
-.welcome{
+.welcome {
     position: absolute;
     height: 100vh;
     top: 0;
     left: 0;
+    right: 0;
     z-index: -1;
     background-color: rgb(131, 157, 165);
     /* background-image: url("/img/skład\ xxs.png"); */
     /* background-size: cover; */
 }
 
-.welcome img{
+.welcome img {
     position: relative;
     /* z-index: 5; */
     height: 100%;
     width: 100%;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
-.welcome div.wrapper{
+.welcome div.wrapper {
     position: absolute;
-    top: 120px;
-    left:50%;
+    top: 150px;
+    left: 50%;
     transform: translateX(-50%);
     width: 80%;
     transition: .4s linear;
 }
 
-.welcome h1{
+.welcome h1 {
     margin: 15px auto;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
-.welcome h2{
+.welcome h2 {
     margin: 10px 20px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
-.welcome div.wrapper.active{
-    top:300px;
+.welcome div.wrapper.active {
+    top: 260px;
 }
 
+/* portrait 360px*/
+
+@media (min-width:360px) {
+    .navbar ul li a {
+        font-size: 1.6rem;
+    }
+    .welcome div.wrapper {
+        top: 200px;
+    }
+    .welcome h1 {
+        margin: 20px auto;
+        font-size: 3rem;
+    }
+    .welcome h2 {
+        margin: 15px 15px;
+        font-size: 2rem;
+    }
+    .welcome div.wrapper.active {
+        top: 290px;
+    }
+}
+
+/* portrait 411px*/
+
+@media (min-width:411px) {
+    .welcome div.wrapper.active {
+        top: 300px;
+    }
+}
+
+/* portrait 768px*/
+
+@media (min-width:768px) {
+    div.logo {
+        left: 35px;
+        top: 15px;
+    }
+    div.logo img {
+        width: 125%;
+    }
+    .navbar ul li {
+        height: 48px;
+    }
+    .navbar ul li a {
+        line-height: 48px;
+        font-size: 1.9rem;
+    }
+    .welcome div.wrapper {
+        top: 220px;
+    }
+    .welcome h1 {
+        margin: 35px auto;
+        font-size: 5rem;
+    }
+    .welcome h2 {
+        margin: 20px 15px;
+        font-size: 4rem;
+    }
+    .welcome div.wrapper.active {
+        top: 360px;
+    }
+}
+
+/* desktop */
+
+@media (min-width:1024px) {}
