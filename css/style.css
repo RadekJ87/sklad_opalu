@@ -190,4 +190,69 @@ nav.navbar.active {
 
 /* desktop */
 
-@media (min-width:1024px) {}
+@media (min-width:1024px) {
+    div.smallburger {
+        display: none;
+    }
+    nav.navbar {
+        position: absolute;
+        width: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30%;
+        right: 0%;
+        transition: none;
+    }
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul li {
+        flex-basis: 18%;
+        border-top: 0;
+    }
+    .navbar ul li a {
+        font-size: 1.8rem;
+        transition: .4s linear;
+    }
+    .navbar ul li a:hover {
+        text-shadow: 3px 3px 8px black;
+    }
+    .welcome img {
+        content: url('/img/sklad\ large.jpg');
+        width: 100%;
+    }
+    .welcome div.wrapper {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* desktop 1920px*/
+
+@media (min-width:1920px) {
+    div.logo img {
+        width: 135%;
+    }
+    .navbar ul li a {
+        font-size: 2rem;
+    }
+    
+    .welcome h1 {
+        margin-bottom: 80px;
+        font-size: 5.4rem;
+    }
+    .welcome h2 {
+        margin-bottom: 40px;
+    }
+    .welcome img {
+        content: url('/img/sklad\ FHD.jpg');
+    }
+}
+
+/* dls mobilek landscape */
+/* tylko wrapper na top 50% i tranfor trnaslate do wysrodkowania */
+/* dla wrapper display none bo nie ma gdzie uciec z tym tak jak w portrait */
+
+/* sekcja z produktami section -> main 4 * div */
