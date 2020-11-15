@@ -16,6 +16,7 @@ html {
 
 header {
     position: fixed;
+    z-index: 3;
     background-color: #ccc;
     height: 90px;
     width: 100%;
@@ -33,7 +34,7 @@ div.logo img {
 
 div.smallburger {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     right: 20px;
     top: 30px;
 }
@@ -123,6 +124,13 @@ nav.navbar.active {
 
 .welcome div.wrapper.active {
     top: 260px;
+}
+
+.products{
+    position: relative;
+    top: 100vh;
+    height: calc(100vh - 90px);
+    background-color: red;
 }
 
 /* portrait 360px*/
@@ -238,7 +246,10 @@ nav.navbar.active {
     .navbar ul li a {
         font-size: 2rem;
     }
-    
+    /* pomyśl na fixed aby najeżdzał dól na to */
+    .welcome {
+        position: fixed;
+    }
     .welcome h1 {
         margin-bottom: 80px;
         font-size: 5.4rem;
