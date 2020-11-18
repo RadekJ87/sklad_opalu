@@ -260,8 +260,7 @@ nav.navbar.active {
 .products {
     /* dla mobilek będzie 2 razy większy */
     /* height: calc(100vh - 90px); */
-    height: calc(210vh - 90px);
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
     background-color: lightblue;
 }
@@ -277,21 +276,18 @@ nav.navbar.active {
 .products div.flex {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: 0; */
-    flex-grow: 0;
-    flex-shrink: 0;
+    height: calc((100vh - 90px) * 2);
 }
 
-.products div.flex>div{
+.products div.flex>div {
     /* 25% wysokość */
     flex-basis: 25%;
-    height: 25%;
-
+    /* height: 25%; */
 }
 
 .products .image {
     width: 100%;
-    background-color: red;
+    background-color: green;
 }
 
 .transport {
