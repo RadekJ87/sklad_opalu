@@ -46,7 +46,6 @@ div.smallburger i {
 
 nav.navbar {
     position: absolute;
-    /* z-index: -1; */
     width: 100%;
     top: 90px;
     left: -100%;
@@ -81,31 +80,42 @@ nav.navbar.active {
 /* secja powitalna */
 
 .welcome {
-    position: absolute;
+    position: relative;
     height: 100vh;
     top: 0;
     left: 0;
     right: 0;
-    z-index: -1;
-    background-color: rgb(131, 157, 165);
-    /* background-image: url("/img/skład\ xxs.png"); */
-    /* background-size: cover; */
+    /* z-index: -1; */
+    /* background-color: rgb(131, 157, 165); */
+    /* background-image: url("/img/skład\ xxs.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.7; */
 }
 
-.welcome img {
-    position: relative;
-    /* z-index: 5; */
-    height: 100%;
-    width: 100%;
+.welcome:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(131, 157, 165);
+    background-image: url("/img/skład\ xxs.png");
     background-size: cover;
-    opacity: 0.4;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .welcome div.wrapper {
     position: absolute;
-    top: 150px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 80%;
     transition: .4s linear;
 }
@@ -123,12 +133,11 @@ nav.navbar.active {
 }
 
 .welcome div.wrapper.active {
-    top: 260px;
+    opacity: 0;
 }
 
-.products{
+.products {
     position: relative;
-    top: 100vh;
     height: calc(100vh - 90px);
     background-color: red;
 }
@@ -139,9 +148,6 @@ nav.navbar.active {
     .navbar ul li a {
         font-size: 1.6rem;
     }
-    .welcome div.wrapper {
-        top: 200px;
-    }
     .welcome h1 {
         margin: 20px auto;
         font-size: 3rem;
@@ -149,17 +155,6 @@ nav.navbar.active {
     .welcome h2 {
         margin: 15px 15px;
         font-size: 2rem;
-    }
-    .welcome div.wrapper.active {
-        top: 290px;
-    }
-}
-
-/* portrait 411px*/
-
-@media (min-width:411px) {
-    .welcome div.wrapper.active {
-        top: 300px;
     }
 }
 
@@ -180,9 +175,6 @@ nav.navbar.active {
         line-height: 48px;
         font-size: 1.9rem;
     }
-    .welcome div.wrapper {
-        top: 220px;
-    }
     .welcome h1 {
         margin: 35px auto;
         font-size: 5rem;
@@ -192,7 +184,8 @@ nav.navbar.active {
         font-size: 4rem;
     }
     .welcome div.wrapper.active {
-        top: 360px;
+        top: 65%;
+        opacity: 1;
     }
 }
 
@@ -203,7 +196,7 @@ nav.navbar.active {
         display: none;
     }
     nav.navbar {
-        position: absolute;
+        /* position: absolute; */
         width: 70%;
         top: 50%;
         transform: translateY(-50%);
@@ -226,18 +219,10 @@ nav.navbar.active {
     .navbar ul li a:hover {
         text-shadow: 3px 3px 8px black;
     }
-    .welcome img {
-        content: url('/img/sklad\ large.jpg');
-        width: 100%;
-    }
-    .welcome div.wrapper {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .welcome:before {
+        background-image: url('/img/sklad\ large.jpg');
     }
 }
-
-/* desktop 1920px*/
 
 @media (min-width:1920px) {
     div.logo img {
@@ -246,9 +231,8 @@ nav.navbar.active {
     .navbar ul li a {
         font-size: 2rem;
     }
-    /* pomyśl na fixed aby najeżdzał dól na to */
-    .welcome {
-        position: fixed;
+    .welcome:before {
+        background-image: url('/img/sklad\ FHD.jpg');
     }
     .welcome h1 {
         margin-bottom: 80px;
@@ -257,13 +241,24 @@ nav.navbar.active {
     .welcome h2 {
         margin-bottom: 40px;
     }
-    .welcome img {
-        content: url('/img/sklad\ FHD.jpg');
+}
+
+@media (min-width:533px) and (orientation: landscape) {
+    .welcome div.wrapper {
+        top: 60%;
     }
 }
 
-/* dls mobilek landscape */
-/* tylko wrapper na top 50% i tranfor trnaslate do wysrodkowania */
-/* dla wrapper display none bo nie ma gdzie uciec z tym tak jak w portrait */
+@media (min-width:640px) and (orientation: landscape) {
+    .welcome div.wrapper {
+        top: 60%;
+    }
+}
+
+@media (min-width:768px) and (orientation: landscape) {
+    .welcome div.wrapper {
+        top: 50%;
+    }
+}
 
 /* sekcja z produktami section -> main 4 * div */
