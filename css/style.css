@@ -101,7 +101,7 @@ nav.navbar.active {
     top: 0;
     left: 0;
     background-color: rgb(131, 157, 165);
-    background-image: url("/img/skład\ xxs.png");
+    background-image: url("/img/sklad-xxs.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -134,12 +134,6 @@ nav.navbar.active {
 
 .welcome div.wrapper.active {
     opacity: 0;
-}
-
-.products {
-    position: relative;
-    height: calc(100vh - 90px);
-    background-color: red;
 }
 
 /* portrait 360px*/
@@ -261,4 +255,46 @@ nav.navbar.active {
     }
 }
 
-/* sekcja z produktami section -> main 4 * div */
+/*sekcja z produktami section -> main 4 * div */
+
+.products {
+    /* dla mobilek będzie 2 razy większy */
+    /* height: calc(100vh - 90px); */
+    height: calc(210vh - 90px);
+    width: 100%;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+.products h2 {
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: #fff;
+}
+
+.products div.flex {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: 0; */
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.products div.flex>div{
+    /* 25% wysokość */
+    flex-basis: 25%;
+    height: 25%;
+
+}
+
+.products .image {
+    width: 100%;
+    background-color: red;
+}
+
+.transport {
+    height: calc(100vh - 90px);
+    background-color: red;
+}
