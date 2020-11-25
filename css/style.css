@@ -262,7 +262,7 @@ nav.navbar.active {
     /* height: calc(100vh - 90px); */
     /* width: 100%; */
     overflow: hidden;
-    background-color: lightblue;
+    background-color: white;
 }
 
 .products h2 {
@@ -270,7 +270,7 @@ nav.navbar.active {
     line-height: 10vh;
     text-align: center;
     font-size: 1.8rem;
-    background-color: #fff;
+    background-color: #ccc;
 }
 
 .products div.flex {
@@ -282,13 +282,96 @@ nav.navbar.active {
 .products div.flex>div {
     /* 25% wysokość */
     flex-basis: 25%;
-    /* height: 25%; */
 }
 
-.products .image {
+.products .image img {
+    height: 100%;
     width: 100%;
-    background-color: green;
+    /* background-color: green; */
 }
+
+.products .products-list {
+    text-align: center;
+    position: relative;
+}
+
+.products .products-list-wrapper {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.products .products-list-wrapper>p~p {
+    text-transform: uppercase;
+}
+
+.products .products-list h3 {
+    font-size: 1.6rem;
+}
+
+.products .products-list p {
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+
+.products .products-list span {
+    font-weight: bold;
+    margin-right: 2%;
+}
+
+/* portrait 360px*/
+
+@media (min-width:360px) {
+    .products h2 {
+        font-size: 2.2rem;
+    }
+    .products .products-list h3 {
+        font-size: 1.9rem;
+    }
+    .products .products-list p {
+        margin: 20px auto;
+        font-size: 1.3rem;
+    }
+}
+
+/* portrait 768px*/
+
+@media (min-width:768px) {
+    .products .image:nth-of-type(1) img {
+        content: url('/img/orzech-md.png');
+    }
+    /* zdjecie do podmianki, postawowe ma zbyt małą rozdzielczość */
+    /* .products .image:nth-of-type(3) img {
+        content: url('/img/orzech-md.png');
+    } */
+    .products h2 {
+        font-size: 4.2rem;
+    }
+    .products .products-list h3 {
+        font-size: 3.2rem;
+    }
+    .products .products-list p {
+        margin: 35px auto;
+        font-size: 2.4rem;
+    }
+}
+
+/* desktop */
+
+/* 1024px - flex row*/
+
+@media (min-width:768px) {
+    .products div.flex {
+        flex-direction: row;
+        height: calc(100vh - 90px);
+    }
+}
+
+/* sekcja transport */
 
 .transport {
     height: calc(100vh - 90px);
