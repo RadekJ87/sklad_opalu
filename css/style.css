@@ -344,12 +344,11 @@ nav.navbar.active {
     .products .image:nth-of-type(1) img {
         content: url('/img/orzech-md.png');
     }
-    /* zdjecie do podmianki, postawowe ma zbyt małą rozdzielczość */
-    /* .products .image:nth-of-type(3) img {
-        content: url('/img/orzech-md.png');
-    } */
+    .products .image:nth-of-type(3) img {
+        content: url('/img/groszek-md.png');
+    }
     .products h2 {
-        font-size: 4.2rem;
+        font-size: 4rem;
     }
     .products .products-list h3 {
         font-size: 3.2rem;
@@ -364,10 +363,61 @@ nav.navbar.active {
 
 /* 1024px - flex row*/
 
-@media (min-width:768px) {
+@media (min-width:1024px) {
     .products div.flex {
         flex-direction: row;
+        flex-wrap: wrap;
         height: calc(100vh - 90px);
+    }
+    .products div.flex>div {
+        /* 50% wysokość */
+        height: 50%;
+        flex-basis: 50%;
+    }
+    /* .products div.flex div:nth-child(1) {
+        order: 1;
+    }
+    .products div.flex div:nth-child(2) {
+        order: 2;
+    } */
+    .products div.flex div:nth-child(3) {
+        order: 4;
+    }
+    .products div.flex div:nth-child(4) {
+        /* background-color: grey; */
+        order: 3;
+    }
+    .products .products-list h3 {
+        font-size: 3rem;
+    }
+    .products .products-list p {
+        margin: 25px auto;
+        font-size: 2rem;
+    }
+}
+
+/* 1280px */
+
+@media (min-width:1280px) {
+    .products {
+        background-color: #eee;
+    }
+    .products div.flex {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .products .products-list {
+        background-color: #fff;
+    }
+    .products .image:nth-of-type(3) img {
+        content: url('/img/groszek-hd.png');
+        background-size: cover;
+    }
+}
+
+@media (min-width:1920px) {
+    .products div.flex {
+        max-width: 1440px;
     }
 }
 
