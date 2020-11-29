@@ -457,6 +457,81 @@ nav.navbar.active {
     }
 }
 
+/* sekcja cennik */
+
+.pricebook {
+    display: flex;
+    flex-direction: column;
+    height: calc((100vh - 90px) + 10vh);
+    /* height: calc((100vh - 90px) * 2); */
+    background-color: lemonchiffon;
+    /* align-items: center; */
+    text-align: center;
+}
+
+/* podpiać to pod klase dla wszystkich np. section-name */
+
+.pricebook h2 {
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 1.8rem;
+    background-color: #ccc;
+}
+
+.coal-list {
+    flex-basis: 50%;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.coal-list:last-child {
+    flex-basis: 50%;
+    background-color: lightsalmon;
+}
+
+.coal-list>ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+
+.coal-list li {
+    margin: 20px auto;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.coal-list li i{
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+
+
+.coal-list li span {
+    font-weight: bold;
+}
+
+.coal-list li h3 {
+    font-size: 1.6rem;
+    text-transform: none;
+}
+
+/* .orzech-pricebook {
+    /* position: absolute; 
+    flex-basis: 50%;
+    background-color: rosybrown;
+}
+
+.groszek-pricebook {
+    flex-basis: 50%;
+    background-color: lightskyblue;
+} */
+
 /* sekcja transport */
 
 .transport {
