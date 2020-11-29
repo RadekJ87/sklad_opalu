@@ -421,6 +421,42 @@ nav.navbar.active {
     }
 }
 
+/* mobile landscape */
+
+@media (min-width:533px) and (orientation: landscape) {
+    .products div.flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: calc((100vh - 90px) * 2);
+    }
+    .products div.flex>div {
+        /* 50% wysokość */
+        height: 50%;
+        flex-basis: 50%;
+    }
+    .products div.flex div:nth-child(3) {
+        order: 4;
+    }
+    .products div.flex div:nth-child(3) img {
+        width: 103%;
+    }
+    .products div.flex div:nth-child(4) {
+        /* background-color: grey; */
+        order: 3;
+    }
+}
+
+@media (min-width:768px) and (orientation: landscape) {
+    .products div.flex {
+        height: calc(100vh - 90px);
+    }
+    .products div.flex>div {
+        /* 50% wysokość */
+        height: 50%;
+        flex-basis: 50%;
+    }
+}
+
 /* sekcja transport */
 
 .transport {
