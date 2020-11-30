@@ -462,16 +462,24 @@ nav.navbar.active {
 .pricebook {
     display: flex;
     flex-direction: column;
-    height: calc((100vh - 90px) + 10vh);
+    height: calc(100vh - 90px);
     /* height: calc((100vh - 90px) * 2); */
-    background-color: lemonchiffon;
+    /* background-color: lemonchiffon; */
     /* align-items: center; */
     text-align: center;
 }
 
 /* podpiać to pod klase dla wszystkich np. section-name */
 
-.pricebook h2 {
+/* .pricebook h2 {
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 1.8rem;
+    background-color: #ccc;
+} */
+
+section.products+h2 {
+    text-align: center;
     height: 10vh;
     line-height: 10vh;
     font-size: 1.8rem;
@@ -482,11 +490,12 @@ nav.navbar.active {
     flex-basis: 50%;
     position: relative;
     letter-spacing: 1px;
+    background-color: #ddd;
 }
 
 .coal-list:last-child {
     flex-basis: 50%;
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
 }
 
 .coal-list>ul {
@@ -501,19 +510,19 @@ nav.navbar.active {
 .coal-list li {
     margin: 20px auto;
     font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
+    line-height: 1.4rem;
     text-transform: uppercase;
 }
 
-.coal-list li i{
+.coal-list li i {
+    font-size: 1.4rem;
     margin-left: 2%;
     margin-right: 1%;
 }
 
-
-
 .coal-list li span {
     font-weight: bold;
+    color: rgb(136, 38, 32);
 }
 
 .coal-list li h3 {
@@ -521,16 +530,113 @@ nav.navbar.active {
     text-transform: none;
 }
 
-/* .orzech-pricebook {
-    /* position: absolute; 
-    flex-basis: 50%;
-    background-color: rosybrown;
+@media (min-width:360px) and (orientation: portrait) {
+    section.products+h2 {
+        font-size: 2.2rem;
+    }
+    .coal-list li i {
+        font-size: 1.5rem;
+    }
+    .coal-list li h3 {
+        font-size: 1.9rem;
+    }
 }
 
-.groszek-pricebook {
-    flex-basis: 50%;
-    background-color: lightskyblue;
-} */
+@media (min-width:768px) and (orientation: portrait) {
+    section.products+h2 {
+        font-size: 4rem;
+    }
+    .coal-list li {
+        margin: 35px auto;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+    .coal-list li i {
+        font-size: 2.8rem;
+    }
+    .coal-list li h3 {
+        font-size: 3.2rem;
+        margin-bottom: 45px;
+    }
+}
+
+/* mobile landscape */
+
+@media (min-width:533px) and (orientation: landscape) {
+    section.products+h2 {
+        font-size: 2.2rem;
+    }
+    .pricebook {
+        flex-direction: row;
+    }
+    .coal-list>ul {
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .coal-list li {
+        font-size: 1.3rem
+    }
+    .coal-list li h3 {
+        font-size: 1.9rem
+    }
+}
+
+@media (min-width:768px) and (orientation: landscape) {
+    section.products+h2 {
+        font-size: 4rem;
+    }
+    .coal-list>ul {
+        top: 10%;
+        width: 55%;
+    }
+}
+
+/* desktop */
+
+@media (min-width:1024px) {
+    .pricebook {
+        height: calc((100vh - 90px) / 2);
+        flex-direction: row;
+    }
+    .coal-list>ul {
+        top: 10%;
+        left: 50%;
+        width: 70%;
+        transform: translate(-50%, 0);
+    }
+    .coal-list li {
+        margin: 25px auto;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-align: justify;
+    }
+    .coal-list li i {
+        font-size: 2.4rem;
+    }
+    .coal-list li h3 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+}
+
+@media (min-width:1280px) {
+    .coal-list>ul {
+        top: 18%;
+        width: 55%;
+    }
+}
+
+@media (min-width:1920px) {
+    .coal-list>ul {
+        width: 40%;
+    }
+}
+
+
+
+
 
 /* sekcja transport */
 
