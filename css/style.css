@@ -415,6 +415,12 @@ nav.navbar.active {
     }
 }
 
+@media (min-width:1440px) {
+    .products .image {
+        overflow: hidden;
+    }
+}
+
 @media (min-width:1920px) {
     .products div.flex {
         max-width: 1440px;
@@ -490,7 +496,7 @@ section.products+h2 {
     flex-basis: 50%;
     position: relative;
     letter-spacing: 1px;
-    background-color: #ddd;
+    background-color: rgb(238, 238, 238);
 }
 
 .coal-list:last-child {
@@ -634,13 +640,49 @@ section.products+h2 {
     }
 }
 
-
-
-
-
 /* sekcja transport */
 
+/* .transport h2 {
+    text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 1.8rem;
+    background-color: #ccc;
+} */
+
+section.pricebook+h2 {
+    text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 1.8rem;
+    background-color: #ccc;
+}
+
 .transport {
+    height: calc(100vh - 90px);
+    position: relative;
+}
+
+.transport .flex-transport {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.transport .flex-transport>* {
+    margin-bottom: 25px;
+}
+
+/* sekcja galeria */
+
+.business-gallery {
     height: calc(100vh - 90px);
     background-color: red;
 }
