@@ -540,6 +540,9 @@ section.products+h2 {
     section.products+h2 {
         font-size: 2.2rem;
     }
+    .coal-list li {
+        font-size: 1.3rem;
+    }
     .coal-list li i {
         font-size: 1.5rem;
     }
@@ -642,14 +645,6 @@ section.products+h2 {
 
 /* sekcja transport */
 
-/* .transport h2 {
-    text-align: center;
-    height: 10vh;
-    line-height: 10vh;
-    font-size: 1.8rem;
-    background-color: #ccc;
-} */
-
 section.pricebook+h2 {
     text-align: center;
     height: 10vh;
@@ -674,10 +669,81 @@ section.pricebook+h2 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
+    /* background-color: red; */
 }
 
 .transport .flex-transport>* {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.transport .flex-transport .transport-img {
+    width: 130px;
+    height: 60px;
+    margin: 5% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flex-transport .transport-img:nth-of-type(1) {
+    background-image: url('/img/transport-firmowy-xxs.png');
+}
+
+.flex-transport .transport-img:nth-of-type(2) {
+    background-image: url('/img/transport-własny-xxs.png');
+}
+
+.transport h3 {
+    font-size: 1.6rem;
+}
+
+.transport p {
+    font-size: 1.2rem;
+}
+
+/* mobile */
+
+@media (min-width:360px) and (orientation: portrait) {
+    section.pricebook+h2 {
+        font-size: 2.2rem;
+    }
+    .transport .flex-transport>* {
+        margin-bottom: 25px;
+    }
+    .transport h3 {
+        font-size: 1.9rem;
+    }
+    .transport p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width:768px) and (orientation: portrait) {
+    section.pricebook+h2 {
+        font-size: 4rem;
+    }
+    .transport .flex-transport>* {
+        margin-bottom: 35px;
+    }
+    .transport .flex-transport .transport-img {
+        width: 130px;
+        height: 110px;
+        /* margin: 5% auto;
+        background-position: center;
+        background-repeat: no-repeat; */
+    }
+    .flex-transport .transport-img:nth-of-type(1) {
+        background-image: url('/img/transport-firmowy-md.png');
+    }
+    .flex-transport .transport-img:nth-of-type(2) {
+        width: 268px;
+        background-image: url('/img/transport-własny-md.png');
+    }
+    .transport h3 {
+        font-size: 3.2rem;
+    }
+    .transport p {
+        font-size: 2.4rem;
+    }
 }
 
 /* sekcja galeria */
