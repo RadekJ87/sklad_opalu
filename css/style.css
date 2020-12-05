@@ -857,3 +857,16 @@ section.pricebook+h2 {
     height: calc(100vh - 90px);
     background-color: red;
 }
+
+/* sekcja kontakt*/
+
+.contact{
+    height: 100vh;
+    background-color: royalblue;
+}
+
+/* stopka */
+
+footer{
+    background-color: cyan;
+}
