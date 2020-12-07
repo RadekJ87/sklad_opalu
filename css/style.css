@@ -861,49 +861,97 @@ section.transport+h2 {
     height: 100%;
 }
 
-
 /* mobile - 360px */
+
 @media (min-width:360px) and (orientation: portrait) {
     section.transport+h2 {
-      font-size: 2.2rem;
+        font-size: 2.2rem;
     }
 }
 
 /* mobile - 360px */
+
 @media (min-width:768px) and (orientation: portrait) {
     section.transport+h2 {
-      font-size: 4rem;
+        font-size: 4rem;
+    }
+    .business-gallery>div:nth-child(1) {
+        content: url('/img/wegiel1-md.png');
+    }
+    .business-gallery>div:nth-child(2) {
+        content: url('/img/wegiel2-md.png');
+    }
+    .business-gallery>div:nth-child(3) {
+        content: url('/img/wegiel3-md.png');
+    }
+    .business-gallery>div:nth-child(4) {
+        content: url('/img/wegiel1-md.png');
+    }
+    .business-gallery>div:nth-child(5) {
+        content: url('/img/wegiel2-md.png');
+    }
+    .business-gallery>div:nth-child(6) {
+        content: url('/img/wegiel1-md.png');
+    }
+    .business-gallery>div:nth-child(7) {
+        content: url('/img/wegiel2-md.png');
     }
 }
 
+@media (min-width:533px) and (orientation: landscape) {
+    section.transport+h2 {
+        font-size: 2.2rem;
+    }
+    .business-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .business-gallery>div {
+        margin: 0.5% auto;
+        flex-basis: 48%;
+    }
+}
 
+@media (min-width:768px) and (orientation: landscape) {
+    section.transport+h2 {
+        font-size: 4rem;
+    }
+    .business-gallery {
+        height: auto;
+        align-items: center;
+    }
+    .business-gallery>div img {
+        height: auto;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width:1440px) {
+    .business-gallery {
+        align-items: center;
+    }
+    .business-gallery>div:nth-child(1) {
+        content: url('/img/wegiel1-hd.png');
+    }
+    .business-gallery>div:nth-child(2) {
+        content: url('/img/wegiel2-hd.png');
+    }
+    .business-gallery>div:nth-child(3) {
+        content: url('/img/wegiel3-hd.png');
+    }
+    .business-gallery>div:nth-child(4) {
+        content: url('/img/wegiel1-hd.png');
+    }
+    .business-gallery>div:nth-child(5) {
+        content: url('/img/wegiel2-hd.png');
+    }
+    .business-gallery>div:nth-child(6) {
+        content: url('/img/wegiel1-hd.png');
+    }
+    .business-gallery>div:nth-child(7) {
+        content: url('/img/wegiel2-hd.png');
+    }
+}
 
 /* sekcja kontakt*/
 
