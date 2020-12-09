@@ -921,9 +921,9 @@ section.transport+h2 {
         height: auto;
         align-items: center;
     }
-    .business-gallery>div img {
+    /* .business-gallery>div img {
         height: auto;
-    }
+    } */
 }
 
 @media (min-width:1440px) {
@@ -955,7 +955,7 @@ section.transport+h2 {
 
 /* sekcja kontakt*/
 
-section.busness-gallery+h2 {
+section.business-gallery+h2 {
     text-align: center;
     height: 10vh;
     line-height: 10vh;
@@ -964,12 +964,111 @@ section.busness-gallery+h2 {
 }
 
 .contact {
-    height: 100vh;
-    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    height: calc((100vh - 90px) * 2);
+    background-color: white;
+}
+
+.contact div {
+    flex-basis: 50%;
+}
+
+.contact-wrapper {
+    margin-top: 20%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-wrapper .contact-phone, .contact-wrapper .contact-hours {
+    margin-top: 30px;
+}
+
+.contact-wrapper h3 {
+    font-size: 1.6rem;
+}
+
+.contact-wrapper h4 {
+    font-size: 1.1rem;
+}
+
+.contact-wrapper p {
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+
+.contact-wrapper span {
+    margin-right: 2%;
+    font-weight: bold;
+}
+
+@media (min-width:360px) and (orientation: portrait) {
+    section.business-gallery+h2 {
+        font-size: 2.2rem;
+    }
+    .contact-wrapper {
+        margin-top: 25%;
+    }
+    .contact-wrapper h3 {
+        font-size: 1.9rem;
+    }
+    .contact-wrapper h4 {
+        font-size: 1.1rem;
+    }
+    .contact-wrapper p {
+        font-size: 1.3rem;
+    }
+    .map {
+        margin: 0 auto;
+    }
+    .map iframe {
+        width: 360px;
+        height: 550px;
+    }
+}
+
+@media (min-width:768px) and (orientation: portrait) {
+    section.business-gallery+h2 {
+        font-size: 4rem;
+    }
+    .contact {
+        height: calc(100vh - 90px);
+    }
+    .contact div:nth-child(1) {
+        flex-basis: 60%;
+    }
+    .contact div:nth-child(2) {
+        flex-basis: 40%;
+    }
+    .contact-wrapper {
+        margin-top: 6%;
+    }
+    .contact-wrapper h3 {
+        font-size: 3.2rem;
+    }
+    .contact-wrapper h4 {
+        font-size: 2.2rem;
+    }
+    .contact-wrapper p {
+        font-size: 2.4rem;
+    }
+    .map iframe {
+        width: 768px;
+        height: 373px;
+    }
 }
 
 /* stopka */
 
 footer {
-    background-color: cyan;
+    text-align: center;
+    line-height: 10vh;
+    background-color: #ccc;
+    height: 10vh;
+}
+
+@media (min-width:768px) and (orientation: portrait) {
+    footer {
+        font-size: 1.6rem;
+    }
 }
