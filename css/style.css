@@ -1058,6 +1058,27 @@ section.business-gallery+h2 {
     }
 }
 
+/* landscape */
+
+@media (min-width:533px) and (orientation: landscape) {
+
+}
+
+@media (min-width:640px) and (orientation: landscape) {
+    
+}
+
+/* potem już deski */
+
+
+
+
+
+/* dla dla 1024, 1440 oraz 1920 */
+
+
+
+
 /* stopka */
 
 footer {
@@ -1071,4 +1092,13 @@ footer {
     footer {
         font-size: 1.6rem;
     }
+}
+
+
+@media (min-width:533px) and (orientation: landscape) {
+
+}
+
+@media (min-width:640px) and (orientation: landscape) {
+    
 }
