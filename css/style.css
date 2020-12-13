@@ -101,7 +101,8 @@ nav.navbar.active {
     top: 0;
     left: 0;
     background-color: rgb(131, 157, 165);
-    background-image: url("/img/sklad-xxs.png");
+    /* background-image: url("/img/sklad-xxs.png"); */
+    background-image: url('/sklad-small.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
