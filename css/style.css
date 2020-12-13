@@ -102,7 +102,7 @@ nav.navbar.active {
     left: 0;
     background-color: rgb(131, 157, 165);
     /* background-image: url("/img/sklad-xxs.png"); */
-    background-image: url('./sklad-small.png');
+    background-image: url('../img/sklad-small.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -216,7 +216,7 @@ nav.navbar.active {
     }
     .welcome:before {
         /* background-image: url('/img/sklad\ large.jpg'); */
-        background-image: url('sklad-lg.jpg');
+        background-image: url('../img/sklad-lg.jpg');
     }
 }
 
@@ -229,7 +229,7 @@ nav.navbar.active {
     }
     .welcome:before {
         /* background-image: url('/img/sklad\ FHD.jpg'); */
-        background-image: url('../sklad-fhd.jpg');
+        background-image: url('../img/sklad-fhd.jpg');
     }
     .welcome h1 {
         margin-bottom: 80px;
@@ -345,10 +345,12 @@ nav.navbar.active {
 
 @media (min-width:768px) {
     .products .image:nth-of-type(1) img {
-        content: url('/img/orzech-md.png');
+        /* content: url('/img/orzech-md.png'); */
+        content: url('../img/orzech-md.png');
     }
     .products .image:nth-of-type(3) img {
-        content: url('/img/groszek-md.png');
+        /* content: url('/img/groszek-md.png'); */
+        content: url('../img/groszek-md.png');
     }
     .products h2 {
         font-size: 4rem;
@@ -413,7 +415,8 @@ nav.navbar.active {
         background-color: #fff;
     }
     .products .image:nth-of-type(3) img {
-        content: url('/img/groszek-hd.png');
+        /* content: url('/img/groszek-hd.png'); */
+        content: url('../img/groszek-hd.png');
         background-size: cover;
     }
 }
@@ -692,11 +695,13 @@ section.pricebook+h2 {
 }
 
 .flex-transport .transport-firm>div {
-    background-image: url('/img/transport-firmowy-xxs.png');
+    /* background-image: url('/img/transport-firmowy-xxs.png'); */
+    background-image: url('../img/transport-firmowy-xxs.png');
 }
 
 .flex-transport .transport-own>div {
-    background-image: url('/img/transport-własny-xxs.png');
+    /* background-image: url('/img/transport-własny-xxs.png'); */
+    background-image: url('../img/transport-własny-xxs.png');
 }
 
 .transport h3 {
@@ -736,11 +741,13 @@ section.pricebook+h2 {
         height: 110px;
     }
     .transport .flex-transport .transport-firm>div {
-        background-image: url('/img/transport-firmowy-md.png');
+        /* background-image: url('/img/transport-firmowy-md.png'); */
+        background-image: url('../img/transport-firmowy-md.png');
     }
     .transport .flex-transport .transport-own>div {
         width: 267px;
-        background-image: url('/img/transport-własny-md.png');
+        /* background-image: url('/img/transport-własny-md.png'); */
+        background-image: url('../img/transport-własny-md.png');
     }
     .transport h3 {
         font-size: 3.2rem;
@@ -810,10 +817,12 @@ section.pricebook+h2 {
         background-size: 100%;
     }
     .transport .flex-transport .transport-firm>div {
-        background-image: url('/img/transport-firmowy-md.png');
+        /* background-image: url('/img/transport-firmowy-md.png'); */
+        background-image: url('../img/transport-firmowy-md.png');
     }
     .transport .flex-transport .transport-own>div {
-        background-image: url('/img/transport-własny-md.png');
+        /* background-image: url('/img/transport-własny-md.png'); */
+        background-image: url('../img/transport-własny-md.png');
     }
     .transport .flex-transport h3, .transport .flex-transport p {
         margin: 20px auto;
@@ -879,25 +888,32 @@ section.transport+h2 {
         font-size: 4rem;
     }
     .business-gallery>div:nth-child(1) {
-        content: url('/img/wegiel1-md.png');
+        /* content: url('/img/wegiel1-md.png'); */
+        content: url('../img/wegiel1-md.png');
     }
     .business-gallery>div:nth-child(2) {
-        content: url('/img/wegiel2-md.png');
+        /* content: url('/img/wegiel2-md.png'); */
+        content: url('../img/wegiel2-md.png');
     }
     .business-gallery>div:nth-child(3) {
-        content: url('/img/wegiel3-md.png');
+        /* content: url('/img/wegiel3-md.png'); */
+        content: url('../img/wegiel3-md.png');
     }
     .business-gallery>div:nth-child(4) {
-        content: url('/img/wegiel1-md.png');
+        /* content: url('/img/wegiel1-md.png'); */
+        content: url('../img/wegiel1-md.png');
     }
     .business-gallery>div:nth-child(5) {
-        content: url('/img/wegiel2-md.png');
+        /* content: url('/img/wegiel2-md.png'); */
+        content: url('../img/wegiel2-md.png');
     }
     .business-gallery>div:nth-child(6) {
-        content: url('/img/wegiel1-md.png');
+        /* content: url('/img/wegiel1-md.png'); */
+        content: url('../img/wegiel1-md.png');
     }
     .business-gallery>div:nth-child(7) {
-        content: url('/img/wegiel2-md.png');
+        /* content: url('/img/wegiel2-md.png'); */
+        content: url('../img/wegiel2-md.png');
     }
 }
 
@@ -934,25 +950,32 @@ section.transport+h2 {
         align-items: center;
     }
     .business-gallery>div:nth-child(1) {
-        content: url('/img/wegiel1-hd.png');
+        /* content: url('/img/wegiel1-hd.png'); */
+        content: url('../img/wegiel1-hd.png');
     }
     .business-gallery>div:nth-child(2) {
-        content: url('/img/wegiel2-hd.png');
+        /* content: url('/img/wegiel2-hd.png'); */
+        content: url('../img/wegiel2-hd.png');
     }
     .business-gallery>div:nth-child(3) {
-        content: url('/img/wegiel3-hd.png');
+        /* content: url('/img/wegiel3-hd.png'); */
+        content: url('../img/wegiel3-hd.png');
     }
     .business-gallery>div:nth-child(4) {
-        content: url('/img/wegiel1-hd.png');
+        /* content: url('/img/wegiel1-hd.png'); */
+        content: url('../img/wegiel1-hd.png');
     }
     .business-gallery>div:nth-child(5) {
-        content: url('/img/wegiel2-hd.png');
+        /* content: url('/img/wegiel2-hd.png'); */
+        content: url('../img/wegiel2-hd.png');
     }
     .business-gallery>div:nth-child(6) {
-        content: url('/img/wegiel1-hd.png');
+        /* content: url('/img/wegiel1-hd.png'); */
+        content: url('../img/wegiel1-hd.png');
     }
     .business-gallery>div:nth-child(7) {
-        content: url('/img/wegiel2-hd.png');
+        /* content: url('/img/wegiel2-hd.png'); */
+        content: url('../img/wegiel2-hd.png');
     }
 }
 
@@ -1063,24 +1086,13 @@ section.business-gallery+h2 {
 
 /* landscape */
 
-@media (min-width:533px) and (orientation: landscape) {
+@media (min-width:533px) and (orientation: landscape) {}
 
-}
-
-@media (min-width:640px) and (orientation: landscape) {
-    
-}
+@media (min-width:640px) and (orientation: landscape) {}
 
 /* potem już deski */
 
-
-
-
-
 /* dla dla 1024, 1440 oraz 1920 */
-
-
-
 
 /* stopka */
 
@@ -1097,11 +1109,6 @@ footer {
     }
 }
 
+@media (min-width:533px) and (orientation: landscape) {}
 
-@media (min-width:533px) and (orientation: landscape) {
-
-}
-
-@media (min-width:640px) and (orientation: landscape) {
-    
-}
+@media (min-width:640px) and (orientation: landscape) {}
