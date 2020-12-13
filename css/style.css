@@ -102,7 +102,7 @@ nav.navbar.active {
     left: 0;
     background-color: rgb(131, 157, 165);
     /* background-image: url("/img/sklad-xxs.png"); */
-    background-image: url('/sklad-small.png');
+    background-image: url('sklad-small.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -216,7 +216,7 @@ nav.navbar.active {
     }
     .welcome:before {
         /* background-image: url('/img/sklad\ large.jpg'); */
-        background-image: url('/sklad-lg.jpg');
+        background-image: url('sklad-lg.jpg');
     }
 }
 
@@ -229,7 +229,7 @@ nav.navbar.active {
     }
     .welcome:before {
         /* background-image: url('/img/sklad\ FHD.jpg'); */
-        background-image: url('/sklad-fhd.jpg');
+        background-image: url('sklad-fhd.jpg');
     }
     .welcome h1 {
         margin-bottom: 80px;
