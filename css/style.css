@@ -215,7 +215,8 @@ nav.navbar.active {
         text-shadow: 3px 3px 8px black;
     }
     .welcome:before {
-        background-image: url('/img/sklad\ large.jpg');
+        /* background-image: url('/img/sklad\ large.jpg'); */
+        background-image: url('/sklad-lg.jpg');
     }
 }
 
@@ -227,7 +228,8 @@ nav.navbar.active {
         font-size: 2rem;
     }
     .welcome:before {
-        background-image: url('/img/sklad\ FHD.jpg');
+        /* background-image: url('/img/sklad\ FHD.jpg'); */
+        background-image: url('/sklad-fhd.jpg');
     }
     .welcome h1 {
         margin-bottom: 80px;
